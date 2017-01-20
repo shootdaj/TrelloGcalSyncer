@@ -9,15 +9,15 @@ namespace TrelloGcalSyncer.Tests
 {
     public class SyncerTests
     {
-		[Test]
-		public void Sync_Works()
-		{
-			Assert.DoesNotThrow(() =>
-			{
-				var syncer = new Syncer();
-				syncer.Sync();
-			});
-		}
+//		[Test]
+//		public void Sync_Works()
+//		{
+//			Assert.DoesNotThrow(() =>
+//			{
+//				var syncer = new Syncer();
+//				syncer.Sync();
+//			});
+//		}
 
 		//[Test]
 	 //   public void AddToGcal_Works()
