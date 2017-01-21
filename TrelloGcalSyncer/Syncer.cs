@@ -135,7 +135,7 @@ namespace TrelloGcalSyncer
 			TrelloConfiguration.JsonFactory = new ManateeFactory();
 			TrelloConfiguration.RestClientProvider = new WebApiClientProvider();
 			TrelloAuthorization.Default.AppKey = Config.Get("TrelloAppKey");
-			TrelloAuthorization.Default.UserToken = Config.Get("TrelloAppTokeny");
+			TrelloAuthorization.Default.UserToken = Config.Get("TrelloAppToken");
 		}
 	}
 }
