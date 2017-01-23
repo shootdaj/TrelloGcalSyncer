@@ -54,11 +54,11 @@ namespace TrelloGcalSyncer
 				Description = card.Description,
 				Start = new EventDateTime()
 				{
-					Date = DateTime.Today.Date.ToString("yyyy-MM-dd")
+					Date =  card.CreationDate.Date.ToString("yyyy-MM-dd")
 				},
 				End = new EventDateTime()
 				{
-					Date = DateTime.Today.Date.ToString("yyyy-MM-dd")
+					Date = card.CreationDate.Date.ToString("yyyy-MM-dd")
 				}
 			};
 			var createRequest = _calendarService.Events.Insert(@event, CalendarID);
